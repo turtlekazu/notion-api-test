@@ -1,5 +1,7 @@
 # Notion API + Ktor Test App with Compose Multiplatform
 
+This project is based on [Compose Multiplatform Wizard](https://terrakok.github.io/Compose-Multiplatform-Wizard/) template.
+
 ## Before running
  - check your system with [KDoctor](https://github.com/Kotlin/kdoctor)
  - install JDK 17 on your machine
