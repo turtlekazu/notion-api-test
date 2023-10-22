@@ -1,10 +1,24 @@
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import org.jetbrains.compose.internal.utils.getLocalProperty
+import com.codingfeline.buildkonfig.compiler.FieldSpec.Type.*
 
 plugins {
     alias(libs.plugins.multiplatform)
     alias(libs.plugins.compose)
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.buildkonfig)
+}
+
+buildkonfig {
+    packageName = "com.ttllab.notionapitest.composeApp"
+
+    defaultConfigs {
+        buildConfigField(STRING, "NOTION_API_KEY", getLocalProperty("notion.api.key"))
+        buildConfigField(STRING, "NOTION_DB_ID", getLocalProperty("notion.db.id"))
+    }
+
+    targetConfigs {}
 }
 
 @OptIn(org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi::class)

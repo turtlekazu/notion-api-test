@@ -8,6 +8,7 @@ androidx-activityCompose = "1.7.2"
 compose-uitooling = "1.5.1"
 kotlinx-coroutines = "1.7.3"
 kotlinx-serialization = "1.5.1"
+buildkonfig-gradle-plugin = "0.14.0"
 ktor = "2.3.5"
 
 [libraries]
@@ -28,3 +29,4 @@ multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotl
 compose = { id = "org.jetbrains.compose", version.ref = "compose" }
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+buildkonfig = { id = "com.codingfeline.buildkonfig", version.ref = "buildkonfig-gradle-plugin" }
